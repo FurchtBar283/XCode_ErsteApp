@@ -16,6 +16,7 @@
 		1667C6ED1C11D35F00EDA997 /* ErsteAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1667C6EC1C11D35F00EDA997 /* ErsteAppTests.swift */; };
 		1667C6F81C11D35F00EDA997 /* ErsteAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1667C6F71C11D35F00EDA997 /* ErsteAppUITests.swift */; };
 		1667C7061C11D5F600EDA997 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1667C7051C11D5F600EDA997 /* Box.swift */; };
+		16F7CB391C317033002F9A7A /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F7CB381C317033002F9A7A /* SliderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1667C6F71C11D35F00EDA997 /* ErsteAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErsteAppUITests.swift; sourceTree = "<group>"; };
 		1667C6F91C11D35F00EDA997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1667C7051C11D5F600EDA997 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		16F7CB381C317033002F9A7A /* SliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				1667C6E31C11D35E00EDA997 /* Info.plist */,
 				1667C6DB1C11D35E00EDA997 /* ErsteApp.xcdatamodeld */,
 				1667C7051C11D5F600EDA997 /* Box.swift */,
+				16F7CB381C317033002F9A7A /* SliderViewController.swift */,
 			);
 			path = ErsteApp;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1667C6DD1C11D35E00EDA997 /* ErsteApp.xcdatamodeld in Sources */,
+				16F7CB391C317033002F9A7A /* SliderViewController.swift in Sources */,
 				1667C7061C11D5F600EDA997 /* Box.swift in Sources */,
 				1667C6D71C11D35E00EDA997 /* ViewController.swift in Sources */,
 				1667C6D51C11D35E00EDA997 /* AppDelegate.swift in Sources */,
@@ -490,6 +494,7 @@
 				1667C6FE1C11D35F00EDA997 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1667C6FF1C11D35F00EDA997 /* Build configuration list for PBXNativeTarget "ErsteAppTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +503,7 @@
 				1667C7011C11D35F00EDA997 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1667C7021C11D35F00EDA997 /* Build configuration list for PBXNativeTarget "ErsteAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +512,7 @@
 				1667C7041C11D35F00EDA997 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
