@@ -9,6 +9,9 @@
 import UIKit
 
 class SliderViewController: UIViewController {
+    var InfoFirstView: String = ""
+    
+    @IBOutlet weak var welcomeLabelOutlet: UILabel!
     @IBOutlet weak var sliderTextfieldOutlet: UILabel!
     @IBOutlet weak var switchTextfieldOutlet: UILabel!
     @IBOutlet weak var switchTextfieldOutletTrue: UILabel!
@@ -42,6 +45,7 @@ class SliderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        welcomeLabelOutlet.text = InfoFirstView
     }
     
     override func didReceiveMemoryWarning() {

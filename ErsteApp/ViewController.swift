@@ -52,6 +52,13 @@ class ViewController: UIViewController {
 
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "goToSlider" {
+            let destinationController = segue.destinationViewController as! SliderViewController
+            destinationController.InfoFirstView = nameLabel.text!
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
