@@ -132,6 +132,12 @@
                                     <rect key="frame" x="112" y="163" width="176" height="21"/>
                                 </variation>
                             </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OGj-3x-X3a">
+                                <rect key="frame" x="0.0" y="-2" width="150" height="2"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="95" y="121" width="214" height="2"/>
+                                </variation>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -148,6 +154,7 @@
                                 <exclude reference="lIF-Mf-qLR"/>
                                 <exclude reference="Zmw-Fw-y90"/>
                                 <exclude reference="VvU-hD-JKZ"/>
+                                <exclude reference="OGj-3x-X3a"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -164,6 +171,7 @@
                                 <include reference="lIF-Mf-qLR"/>
                                 <include reference="Zmw-Fw-y90"/>
                                 <include reference="VvU-hD-JKZ"/>
+                                <include reference="OGj-3x-X3a"/>
                             </mask>
                         </variation>
                     </view>
@@ -179,6 +187,7 @@
                         <outlet property="nameLabel" destination="8Ec-aR-8nS" id="dWN-g8-gLf"/>
                         <outlet property="nameSegment" destination="Zmw-Fw-y90" id="Tp9-Or-2g5"/>
                         <outlet property="positionLabel" destination="dKh-Yf-4PH" id="mqu-oY-2aC"/>
+                        <outlet property="progressViewOutlet" destination="OGj-3x-X3a" id="PAO-cD-Q6Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

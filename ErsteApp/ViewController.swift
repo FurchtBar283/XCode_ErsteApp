@@ -11,7 +11,10 @@ import UIKit
 class ViewController: UIViewController {
     
     var namensListe = [String: [String: String]]()
+    var timer: NSTimer!
+    var count: Float = 0.0
     
+    @IBOutlet weak var progressViewOutlet: UIProgressView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var alterLabel: UILabel!
     @IBOutlet weak var positionLabel: UILabel!
@@ -59,9 +62,20 @@ class ViewController: UIViewController {
         }
     }
     
+    func timerFunction() {
+        count += 0.1
+        if (count > 1.1) {
+            self.progressViewOutlet.removeFromSuperview()
+        }
+        
+       self.progressViewOutlet.progress = count
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "timerFunction", userInfo: nil, repeats: true)
         
         
         // Dictionary für die jeweiligen Mitarbeiter
