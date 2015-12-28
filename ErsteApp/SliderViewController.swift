@@ -16,12 +16,16 @@ class SliderViewController: UIViewController {
     @IBOutlet weak var switchTextfieldOutlet: UILabel!
     @IBOutlet weak var switchTextfieldOutletTrue: UILabel!
     @IBOutlet weak var stepperLabelOutlet: UILabel!
+    @IBOutlet weak var activityIndicatorOutlet: UIActivityIndicatorView!
     
     @IBAction func sliderChanged(sender: UISlider) {
         let sliderValue = sender.value
         //print(sliderValue)
         //sliderTextfieldOutlet.text = NSString(format: "%.2f", sliderValue) as String
         sliderTextfieldOutlet.text = String.init(format: "%.2f", sliderValue)
+        if activityIndicatorOutlet.hidden == false {
+            activityIndicatorOutlet.stopAnimating()
+        }
     }
     
     @IBAction func switchChanged(sender: UISwitch) {
@@ -45,7 +49,9 @@ class SliderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        activityIndicatorOutlet.startAnimating()
         welcomeLabelOutlet.text = InfoFirstView
+       // activityIndicatorOutlet.stopAnimating()
     }
     
     override func didReceiveMemoryWarning() {

@@ -296,6 +296,12 @@
                                     <rect key="frame" x="183" y="90" width="158" height="21"/>
                                 </variation>
                             </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="center" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jgR-yL-7AW">
+                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="237" y="223" width="20" height="20"/>
+                                </variation>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -310,6 +316,7 @@
                                 <exclude reference="3mu-IX-faF"/>
                                 <exclude reference="8RC-gE-GTN"/>
                                 <exclude reference="qg5-kO-n6L"/>
+                                <exclude reference="jgR-yL-7AW"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -324,10 +331,12 @@
                                 <include reference="3mu-IX-faF"/>
                                 <include reference="8RC-gE-GTN"/>
                                 <include reference="qg5-kO-n6L"/>
+                                <include reference="jgR-yL-7AW"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="activityIndicatorOutlet" destination="jgR-yL-7AW" id="nZB-C7-7EJ"/>
                         <outlet property="sliderTextfieldOutlet" destination="qfJ-Lm-ayb" id="srg-Dy-hEV"/>
                         <outlet property="stepperLabelOutlet" destination="3mu-IX-faF" id="ZBz-8V-xIg"/>
                         <outlet property="switchTextfieldOutlet" destination="XDp-jW-nXY" id="F3Z-D9-IGE"/>
