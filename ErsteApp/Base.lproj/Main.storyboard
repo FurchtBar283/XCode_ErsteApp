@@ -224,6 +224,15 @@
                                     <rect key="frame" x="143" y="350" width="60" height="40"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWk-mH-hIm">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="220" y="350" width="48" height="40"/>
+                                </variation>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Noch mehr UI-Elemente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3F3-Sp-oap">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
@@ -242,13 +251,22 @@
                                     <rect key="frame" x="183" y="222" width="35" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWk-mH-hIm">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-10" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="1BP-VR-Baz">
+                                <rect key="frame" x="-47" y="-14" width="94" height="29"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="153" y="405" width="94" height="29"/>
+                                </variation>
+                                <connections>
+                                    <action selector="stepperClicked:" destination="DgI-9U-eYd" eventType="valueChanged" id="MjK-VR-L2a"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mu-IX-faF">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="220" y="350" width="48" height="40"/>
+                                    <rect key="frame" x="190" y="452" width="28" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -258,9 +276,11 @@
                                 <exclude reference="fd0-3c-s5T"/>
                                 <exclude reference="zXh-aM-EiB"/>
                                 <exclude reference="XDp-jW-nXY"/>
+                                <exclude reference="LWk-mH-hIm"/>
                                 <exclude reference="3F3-Sp-oap"/>
                                 <exclude reference="qfJ-Lm-ayb"/>
-                                <exclude reference="LWk-mH-hIm"/>
+                                <exclude reference="1BP-VR-Baz"/>
+                                <exclude reference="3mu-IX-faF"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -268,14 +288,17 @@
                                 <include reference="fd0-3c-s5T"/>
                                 <include reference="zXh-aM-EiB"/>
                                 <include reference="XDp-jW-nXY"/>
+                                <include reference="LWk-mH-hIm"/>
                                 <include reference="3F3-Sp-oap"/>
                                 <include reference="qfJ-Lm-ayb"/>
-                                <include reference="LWk-mH-hIm"/>
+                                <include reference="1BP-VR-Baz"/>
+                                <include reference="3mu-IX-faF"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="sliderTextfieldOutlet" destination="qfJ-Lm-ayb" id="srg-Dy-hEV"/>
+                        <outlet property="stepperLabelOutlet" destination="3mu-IX-faF" id="ZBz-8V-xIg"/>
                         <outlet property="switchTextfieldOutlet" destination="XDp-jW-nXY" id="F3Z-D9-IGE"/>
                         <outlet property="switchTextfieldOutletTrue" destination="LWk-mH-hIm" id="SEw-1t-tz6"/>
                     </connections>

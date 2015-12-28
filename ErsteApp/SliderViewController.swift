@@ -12,11 +12,13 @@ class SliderViewController: UIViewController {
     @IBOutlet weak var sliderTextfieldOutlet: UILabel!
     @IBOutlet weak var switchTextfieldOutlet: UILabel!
     @IBOutlet weak var switchTextfieldOutletTrue: UILabel!
+    @IBOutlet weak var stepperLabelOutlet: UILabel!
     
     @IBAction func sliderChanged(sender: UISlider) {
         let sliderValue = sender.value
         //print(sliderValue)
-        sliderTextfieldOutlet.text = NSString(format: "%.2f", sliderValue) as String
+        //sliderTextfieldOutlet.text = NSString(format: "%.2f", sliderValue) as String
+        sliderTextfieldOutlet.text = String.init(format: "%.2f", sliderValue)
     }
     
     @IBAction func switchChanged(sender: UISwitch) {
@@ -29,6 +31,10 @@ class SliderViewController: UIViewController {
             switchTextfieldOutlet.text = switchValueAsString
             switchTextfieldOutletTrue.text = ""
         }
+    }
+    
+    @IBAction func stepperClicked(sender: UIStepper) {
+        stepperLabelOutlet.text = String.init(format: "%.0f", sender.value)
     }
     
     func BoolToString(b: Bool)->String { return b.description ?? "<None>"}
